@@ -32,4 +32,11 @@ FirstApp.propTypes = {
     title: PropTypes.string.isRequired
 }
 
+// DefaultProps
+FirstApp.defaultProps = {
+    name: "Jose Rafael",
+    title: "No hay titulo",
+}
+
+
 // export default FristApp;
