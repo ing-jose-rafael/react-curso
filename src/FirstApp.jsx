@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 // No renderiza lo que este fuera del componente
 const newMessage = 'Jose';
 /* se puede enviar todo tipo de variable menos el objeto, 
@@ -25,6 +26,10 @@ export const FirstApp = ( {title} ) => {
             <code>{ JSON.stringify( newObject ) }</code>
         </>
     );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired
 }
 
 // export default FristApp;
