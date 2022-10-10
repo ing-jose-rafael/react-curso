@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types'
 
 export const CounterApp = ({ value }) => {
-    function handleAdd( event ) {
+   
+    const handleAdd = ( event ) => {
         console.log( event );
     }
     return (
