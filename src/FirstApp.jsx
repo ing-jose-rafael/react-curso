@@ -12,12 +12,14 @@ const newObject = {
 const getResult = ( a ,b ) => a + b;
 
 
-export const FirstApp = () => {
+export const FirstApp = ( props ) => {
+    console.log( props );
     return (
         <>
             <h1>{ newMessage }</h1>
+            <h2>{ props.title }</h2>
             {/* funciones que no sean async  */}
-            <h2>Resultado de 2 + 4 = { getResult(2,4) }</h2>
+            <h3>Resultado de 2 + 4 = { getResult(2,4) }</h3>
             <p>Soy un subtitulo</p>
             <p>{ newObject.messegae }</p>
             <code>{ JSON.stringify( newObject ) }</code>
