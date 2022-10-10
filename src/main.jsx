@@ -10,6 +10,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <FirstApp title="Soy Goku!"/> */}
-    <CounterApp value={ 2 } />
+    <CounterApp value={ 10 } />
   </React.StrictMode>
 )
