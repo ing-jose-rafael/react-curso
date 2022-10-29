@@ -1,9 +1,20 @@
+import GitItem from "./GitItem";
+import { useFecthGifs } from "../hooks/useFecthGifs";
 
 export const GifGrid = ({category}) => {
+  const {images, isLoading} = useFecthGifs(category);
+
+  
+
   return (
     <>
-      <h1>{category}</h1>
-      <p>Hola Mundo</p>
+      <h3>{category}</h3>
+
+      <ol>
+        {images.map((image) => (
+          <GitItem key={image.id} {...image}/>
+        ))}
+      </ol>
     </>
   )
 }

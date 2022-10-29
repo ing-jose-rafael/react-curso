@@ -3,7 +3,7 @@ import { AddCategories } from './components/AddCategories';
 import {GifGrid} from './components/GifGrid';
 
 export const GitExpertApp = () => {
-  const [ categories, setCategories ] = useState([ 'One Punch','Dragon Boll']);
+  const [ categories, setCategories ] = useState([ 'One Punch']);
   // console.log(categories);
   // const onAddCategory = () => setCategories((c) => c.concat('Valorant'));
   const onAddCategory = (newCategory) => {
