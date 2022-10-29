@@ -1,7 +1,7 @@
 
 const GitItem = ({title,url}) => {
   return (
-    <div className="card-grid">
+    <div className="card">
       <img src={url} alt={title} />
       <p>{title}</p>
     </div>
