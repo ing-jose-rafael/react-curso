@@ -1,6 +1,5 @@
  import {useState} from 'react'
-import { AddCategories } from './components/AddCategories';
-import {GifGrid} from './components/GifGrid';
+import { AddCategories,GifGrid } from './components';
 
 export const GitExpertApp = () => {
   const [ categories, setCategories ] = useState([ 'Dragon Boll']);
